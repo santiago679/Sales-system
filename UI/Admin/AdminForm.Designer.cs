@@ -29,30 +29,20 @@
         private void InitializeComponent()
         {
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(12, 292);
+            this.btnLogOut.Location = new System.Drawing.Point(21, 316);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(133, 23);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "Cerrar sesion";
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(15, 27);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(130, 23);
-            this.btnBack.TabIndex = 1;
-            this.btnBack.Text = "Atrás";
-            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // btnProducts
             // 
@@ -73,24 +63,24 @@
             this.button2.Text = "Ventas";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUsuarios
             // 
-            this.button3.Location = new System.Drawing.Point(343, 275);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Usuarios";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Location = new System.Drawing.Point(343, 275);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(75, 23);
+            this.btnUsuarios.TabIndex = 4;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.button3_Click);
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnProducts);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogOut);
             this.Name = "AdminForm";
             this.Text = "AdminForm";
@@ -101,9 +91,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnUsuarios;
     }
 }

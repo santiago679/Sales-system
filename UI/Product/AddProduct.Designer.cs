@@ -70,7 +70,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(351, 395);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(88, 29);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;

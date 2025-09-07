@@ -37,6 +37,7 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.cmbActive = new System.Windows.Forms.ComboBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEdit
@@ -114,11 +115,22 @@
             this.cmbActive.Size = new System.Drawing.Size(121, 24);
             this.cmbActive.TabIndex = 8;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(22, 22);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.Text = "Atrás";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // EditProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.cmbActive);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtDescription);
@@ -146,5 +158,6 @@
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.ComboBox cmbActive;
+        private System.Windows.Forms.Button btnBack;
     }
 }

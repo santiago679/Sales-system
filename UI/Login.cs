@@ -16,6 +16,7 @@ namespace SalesSystem
             userBLL = new UserBLL();
         }
 
+        //Un comentario
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
