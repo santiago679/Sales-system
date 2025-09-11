@@ -56,6 +56,11 @@
     <Compile Include="Entities\Sale.cs" />
     <Compile Include="Entities\SaleDetail.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Product\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,15 +99,29 @@
     <Compile Include="UI\Seller\SellerForm.Designer.cs">
       <DependentUpon>SellerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\User\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\User\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\User\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\User\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\User\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\User\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UI\Product\AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +137,15 @@
     <EmbeddedResource Include="UI\Product\ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\User\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\User\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\User\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,6 +158,49 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gitignore.txt" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.41.31 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.40.29 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.39.54 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.32.03 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.31.55 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.30.03 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.29.26 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.28.49 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.28.10 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.27.27 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.26.50 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.26.03 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.22.19 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.11.28 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 11.00.16 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.59.54 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.43.35 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.39.09 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.38.54 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.15.47 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.15.25 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.15.05 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.32.21 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.14.46 PM1.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 10.14.46 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 9.54.50 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 9.41.28 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 9.39.48 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 9.37.44 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 9.26.07 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.59.42 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.56.41 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.53.07 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.51.13 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.37.58 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.29.15 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.24.37 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 6.24.01 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 5.40.22 PM.jpeg" />
+    <None Include="Resources\WhatsApp Image 2025-09-10 at 4.47.26 PM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
