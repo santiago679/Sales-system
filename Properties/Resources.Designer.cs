@@ -63,9 +63,9 @@ namespace SalesSystem.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_10_at_10_15_05_PM {
+        internal static System.Drawing.Bitmap Descripcion {
             get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-10 at 10.15.05 PM", resourceCulture);
+                object obj = ResourceManager.GetObject("Descripcion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
