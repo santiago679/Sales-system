@@ -5,8 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using SalesSystem.Entities;
 using System.Data.SqlClient;
+
+using System.Windows.Forms;
+
 using SalesSystem.DTOs;
 using SalesSystem.DTOs.User;
+
 
 namespace SalesSystem.DAL
 {
@@ -83,16 +87,27 @@ namespace SalesSystem.DAL
             return users;
         }
 
-        public void Delete(int userId)
+        public int Delete(int userId)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = "DELETE FROM [User] WHERE UserID = @UserID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", userId);
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    string query = "DELETE FROM [User] WHERE UserID = @UserID";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@UserID", userId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas;
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+                return 0;
+                
             }
         }
 

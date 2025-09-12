@@ -236,28 +236,8 @@
             this.button1.Size = new System.Drawing.Size(233, 412);
             this.button1.TabIndex = 26;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Image = global::SalesSystem.Properties.Resources.WhatsApp_Image_2025_09_10_at_11_32_03_PM;
-            this.pictureBox12.Location = new System.Drawing.Point(49, 295);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(185, 156);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 37;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.Image = global::SalesSystem.Properties.Resources.WhatsApp_Image_2025_09_10_at_11_31_55_PM;
-            this.pictureBox11.Location = new System.Drawing.Point(49, 117);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(185, 156);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 36;
-            this.pictureBox11.TabStop = false;
+            //  
+            
             // 
             // pictureBox10
             // 

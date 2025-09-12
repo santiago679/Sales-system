@@ -43,9 +43,10 @@ namespace SalesSystem.BLL
             return userDAL.GetAll();
         }
 
-        public void DeleteUser(int userId)
+        public int DeleteUser(int userId)
         {
-            userDAL.Delete(userId);
+            int filasAfectadas = userDAL.Delete(userId);
+            return filasAfectadas;
         }
 
         public void Add(User user)
