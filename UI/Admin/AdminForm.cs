@@ -26,7 +26,6 @@ namespace SalesSystem.UI
             login.Show();
             this.Close();
         }
-
         private void btnProducts_Click(object sender, EventArgs e)
         {
             ProductForm productForm = new ProductForm(this);

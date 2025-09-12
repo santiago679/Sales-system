@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SalesSystem.Entities
+namespace SalesSystem.DTOs
 {
-    public class User
+    public class UserDTO
     {
         public int UserID { get; set; }
         public string FullName { get; set; }
@@ -11,10 +15,7 @@ namespace SalesSystem.Entities
         public string Address { get; set; }
         public string Email { get; set; }
         public DateTime RegistrationDate { get; set; }
-        public string PasswordHash { get; set; }
-        public string Role { get; set; }
-        // Administrator, Seller, Customer
-
-        //Se puede cambiar por tipo enum
+        public string Role { get; set; } 
     }
+
 }
