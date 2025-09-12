@@ -74,5 +74,12 @@ namespace SalesSystem.UI.Products
                 MessageBox.Show("Error al editar el producto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ProductForm productForm = new ProductForm(); // crea una nueva instancia
+            this.Close();                                // cierra EditProduct
+            productForm.Show();
+        }
     }
 }

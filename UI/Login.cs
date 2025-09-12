@@ -18,6 +18,7 @@ namespace SalesSystem
             userBLL = new UserBLL();
         }
 
+        //Un comentario
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var loginDTO = new UserLoginDTO
