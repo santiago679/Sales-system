@@ -85,9 +85,18 @@ namespace SalesSystem.UI
                 {
                     try
                     {
-                        userBLL.DeleteUser(userId);
-                        MessageBox.Show("Usuario eliminado correctamente.");
-                        CargarUsuarios();
+                        int filasAfectadas =  userBLL.DeleteUser(userId);
+                        
+                        if(filasAfectadas > 0)
+                        {
+                            MessageBox.Show("Usuario eliminado correctamente");
+                            CargarUsuarios();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se ha podido eliminar el usuario");
+                        }
+                        
                     }
                     catch (Exception ex)
                     {
