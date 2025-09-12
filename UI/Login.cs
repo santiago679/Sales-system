@@ -1,4 +1,6 @@
 ﻿using SalesSystem.BLL;
+using SalesSystem.DTOs;
+using SalesSystem.DTOs.User;
 using SalesSystem.Entities;
 using SalesSystem.UI;
 using System;
@@ -18,25 +20,28 @@ namespace SalesSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string email = txtEmail.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            var loginDTO = new UserLoginDTO
+            {
+                Email = txtEmail.Text,
+                Password = txtPassword.Text,
+            };
 
             try
             {
-                User user = userBLL.Login(email, password);
+                AuthenticatedUserDTO authenticatedUserDTO = userBLL.Login(loginDTO);
 
-                MessageBox.Show($"Welcome {user.FullName}! Your role is {user.Role}.",
+                MessageBox.Show($"Welcome {authenticatedUserDTO.FullName}! Your role is {authenticatedUserDTO.Role}.",
                                 "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Determinar el rol del usuario para redirigir al respectivo formulario
-                if (user.Role == "Administrator")
+                if (authenticatedUserDTO.Role == "Administrator")
                 {
                     var adminForm = new AdminForm();
                     adminForm.Show();
                 }
-                else if (user.Role == "Seller")
+                else if (authenticatedUserDTO.Role == "Seller")
                 {
-                    var sellerForm = new SellerForm();
+                    var sellerForm = new SellerForm();  
                     sellerForm.Show();
                 }
 

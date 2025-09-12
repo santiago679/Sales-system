@@ -52,6 +52,9 @@
     <Compile Include="DAL\BaseDAL.cs" />
     <Compile Include="DAL\ProductDAL.cs" />
     <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="DTOs\User\AuthenticatedUserDTO.cs" />
+    <Compile Include="DTOs\User\UserDTO.cs" />
+    <Compile Include="DTOs\User\UserLoginDTO.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Sale.cs" />
     <Compile Include="Entities\SaleDetail.cs" />
@@ -118,6 +121,9 @@
     <EmbeddedResource Include="UI\Product\ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Seller\SellerForm.resx">
+      <DependentUpon>SellerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOs\Product\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
