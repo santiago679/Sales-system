@@ -12,9 +12,6 @@ namespace SalesSystem.Entities
         public string Email { get; set; }
         public DateTime RegistrationDate { get; set; }
         public string PasswordHash { get; set; }
-        public string Role { get; set; }
-        // Administrator, Seller, Customer
-
-        //Se puede cambiar por tipo enum
+        public string Role { get; set; }  // Administrator, Seller, Customer
     }
 }

@@ -107,20 +107,21 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::SalesSystem.Properties.Resources.WhatsApp_Image_2025_09_10_at_6_59_42_PM;
-            this.pictureBox2.Location = new System.Drawing.Point(404, 369);
+            this.pictureBox2.Image = global::SalesSystem.Properties.Resources.Ingreso;
+            this.pictureBox2.Location = new System.Drawing.Point(416, 369);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::SalesSystem.Properties.Resources.WhatsApp_Image_2025_09_10_at_4_47_26_PM;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 30);
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::SalesSystem.Properties.Resources.Usuario;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(268, 267);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
