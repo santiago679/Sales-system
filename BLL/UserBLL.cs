@@ -1,6 +1,4 @@
 ﻿using SalesSystem.DAL;
-using SalesSystem.DTOs;
-using SalesSystem.DTOs.User;
 using SalesSystem.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,25 +15,16 @@ namespace SalesSystem.BLL
             userDAL = new UserDAL();
         }
 
-        public AuthenticatedUserDTO Login(UserLoginDTO loginDTO)
+        public User Login(string email, string password)
         {
-            var user = userDAL.Login(loginDTO);
-            AuthenticatedUserDTO authenticatedUserDTO = null;
+            var user = userDAL.Login(email, password);
 
             if (user == null)
             {
                 throw new Exception("Credenciales inválidas o rol no autorizado");
             }
-            else 
-            { 
-                authenticatedUserDTO = new AuthenticatedUserDTO {
-                    UserID = user.UserID,
-                    FullName = user.FullName,
-                    Role = user.Role,
-                };
-            }
 
-            return authenticatedUserDTO;
+            return user;
         }
 
         public List<User> GetAll()

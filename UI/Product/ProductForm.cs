@@ -88,5 +88,10 @@ namespace SalesSystem.UI
             this.Close();
             admin.Show();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

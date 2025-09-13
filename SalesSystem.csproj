@@ -167,9 +167,42 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\Product\" />
+    <Content Include="gitignore.txt" />
+    <None Include="Resources\Usuario 4.jpeg" />
+    <None Include="Resources\Usuario 3.jpeg" />
+    <None Include="Resources\Rol Usuario.jpeg" />
+    <None Include="Resources\Contraseña Usuario.jpeg" />
+    <None Include="Resources\Registro Usuario.jpeg" />
+    <None Include="Resources\Correo Usuario.jpeg" />
+    <None Include="Resources\Direccion Usuario.jpeg" />
+    <None Include="Resources\Telefono Usuario.jpeg" />
+    <None Include="Resources\Identidad Usuario.jpeg" />
+    <None Include="Resources\Nombre Usuario.jpeg" />
+    <None Include="Resources\Usuario 2.jpeg" />
+    <None Include="Resources\Usuario 1.jpeg" />
+    <None Include="Resources\Lista Usuarios.jpeg" />
+    <None Include="Resources\Productaside2.jpeg" />
+    <None Include="Resources\Productaside1.jpeg" />
+    <None Include="Resources\Activo o inactivo.jpeg" />
+    <None Include="Resources\Precio.jpeg" />
+    <None Include="Resources\Descripcion.png" />
+    <None Include="Resources\Nombre producto.jpeg" />
+    <None Include="Resources\Editaraside2.jpeg" />
+    <None Include="Resources\Editaraside1.jpeg" />
+    <None Include="Resources\Atras 2.jpeg" />
+    <None Include="Resources\Eliminar.jpeg" />
+    <None Include="Resources\Editar.jpeg" />
+    <None Include="Resources\Agregar.jpeg" />
+    <None Include="Resources\Lista productos.jpeg" />
+    <None Include="Resources\Atras.jpeg" />
+    <None Include="Resources\Cerrar Sesion.jpeg" />
+    <None Include="Resources\Usuarios.jpeg" />
+    <None Include="Resources\Ventas.jpeg" />
+    <None Include="Resources\Productos.jpeg" />
+    <None Include="Resources\Adminaside2.jpeg" />
+    <None Include="Resources\Adminaside1.jpeg" />
+    <None Include="Resources\Ingreso.jpeg" />
+    <None Include="Resources\Usuario.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
